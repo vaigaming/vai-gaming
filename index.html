@@ -1,156 +1,38 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vai Gaming</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111827;
-      color: white;
-    }
-
-    header {
-      background: #7c3aed;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    nav {
-      background: #1f2937;
-      padding: 12px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    .hero h2 {
-      font-size: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #22c55e;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 8px;
-      text-decoration: none;
-    }
-
-    .shop {
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .product {
-      background: #1f2937;
-      padding: 20px;
-      width: 220px;
-      border-radius: 12px;
-    }
-
-    .product h3 {
-      color: #a78bfa;
-    }
-
-    .price {
-      color: #22c55e;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      background: #030712;
-      text-align: center;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111827">
+<link rel="manifest" href="manifest.json">
+<title>Vai Gaming</title>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#fff}
+header{padding:22px 18px;background:linear-gradient(135deg,#7c3aed,#2563eb);text-align:center}
+header h1{margin:0;font-size:30px} header p{margin:7px 0 0}
+nav{display:flex;justify-content:space-around;padding:14px;background:#151b2e;position:sticky;top:0}
+nav a{color:#fff;text-decoration:none}
+.hero{padding:42px 20px;text-align:center;background:radial-gradient(circle at top,#312e81,#0b1020 65%)}
+.hero h2{font-size:28px;margin:0 0 12px}.btn{display:inline-block;background:#22c55e;color:#fff;padding:12px 20px;border-radius:9px;text-decoration:none;font-weight:bold}
+.shop{padding:25px 16px}.shop h2{text-align:center}.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:14px}
+.product{background:#171d31;border:1px solid #2b3554;border-radius:14px;padding:18px;text-align:center}
+.product .icon{font-size:42px}.product h3{color:#c4b5fd}.price{color:#4ade80;font-weight:bold;font-size:19px}
+.contact{text-align:center;padding:30px 16px}footer{text-align:center;padding:20px;background:#050814;color:#aab2c5}
+</style>
 </head>
-
 <body>
-
-  <header>
-    <h1>🎮 Vai Gaming</h1>
-    <p>Gaming & Online Shop</p>
-  </header>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#shop">Shop</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section class="hero" id="home">
-    <h2>Welcome to Vai Gaming 🎮</h2>
-    <p>Gaming products ও accessories এক জায়গায়</p>
-    <a class="btn" href="#shop">Shop Now</a>
-  </section>
-
-  <section class="shop" id="shop">
-    <h2>🛒 Our Products</h2>
-
-    <div class="products">
-
-      <div class="product">
-        <h3>Gaming Mouse</h3>
-        <p>High performance gaming mouse</p>
-        <p class="price">৳800</p>
-        <a class="btn" href="#contact">Buy Now</a>
-      </div>
-
-      <div class="product">
-        <h3>Gaming Keyboard</h3>
-        <p>RGB Gaming Keyboard</p>
-        <p class="price">৳1,500</p>
-        <a class="btn" href="#contact">Buy Now</a>
-      </div>
-
-      <div class="product">
-        <h3>Gaming Headset</h3>
-        <p>Clear sound gaming headset</p>
-        <p class="price">৳1,200</p>
-        <a class="btn" href="#contact">Buy Now</a>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="hero" id="contact">
-    <h2>📞 Contact Us</h2>
-    <p>Order করতে আমাদের সাথে যোগাযোগ করুন</p>
-    <a class="btn" href="https://wa.me/8801777415226">
-      WhatsApp
-    </a>
-  </section>
-
-  <footer>
-    <p>© 2026 Vai Gaming. All Rights Reserved.</p>
-  </footer>
-
+<header><h1>🎮 Vai Gaming</h1><p>Gaming & Online Shop</p></header>
+<nav><a href="#home">Home</a><a href="#shop">Shop</a><a href="#contact">Contact</a></nav>
+<section class="hero" id="home"><h2>Welcome to Vai Gaming 🎮</h2><p>Gaming products ও accessories এক জায়গায়</p><a class="btn" href="#shop">Shop Now</a></section>
+<section class="shop" id="shop"><h2>🛒 Products</h2><div class="products">
+<div class="product"><div class="icon">🖱️</div><h3>Gaming Mouse</h3><p>High performance mouse</p><p class="price">৳800</p><a class="btn" href="https://wa.me/8801754585306">Order</a></div>
+<div class="product"><div class="icon">⌨️</div><h3>Gaming Keyboard</h3><p>RGB gaming keyboard</p><p class="price">৳1,500</p><a class="btn" href="https://wa.me/8801754585306">Order</a></div>
+<div class="product"><div class="icon">🎧</div><h3>Gaming Headset</h3><p>Clear sound headset</p><p class="price">৳1,200</p><a class="btn" href="https://wa.me/8801754585306">Order</a></div>
+</div></section>
+<section class="contact" id="contact"><h2>📞 Contact</h2><p>Order করতে WhatsApp-এ যোগাযোগ করুন</p><a class="btn" href="https://wa.me/8801754585306">WhatsApp Order</a></section>
+<footer>© 2026 Vai Gaming</footer>
+<script>
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+</script>
 </body>
-                        </html>
+</html>
